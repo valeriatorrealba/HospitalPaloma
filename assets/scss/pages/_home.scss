@@ -1,0 +1,129 @@
+/*--------------------------------------------------------------
+# Home Sections
+--------------------------------------------------------------*/
+.section{
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.section__hero{
+    color: $text-color-black;
+    text-align: center;
+    justify-items: center;
+    margin: 0 15px;
+    overflow: hidden;
+    width: 70vw;
+    padding: 0 20px;
+}
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero__title{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.hero__title--size{
+    font-size: 2em;
+}
+.hero__paragraph{
+    margin-top: 15px;
+    font-size: 1rem;
+}
+@media (max-width: 767px){
+    .hero__title{
+        font-size: 2rem;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.section__services{
+    text-align: center;
+    padding: 25px;
+}
+.services__title{
+    font-size: 2rem;
+}
+.services__paragraph{
+    font-size: 1rem;
+    margin: 0 40px;
+    padding: 15px;
+}
+
+.services__box{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.box__container{
+    width: 400px;
+    margin: 0 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(219,52,152,0.4);
+    border-radius: 8%;
+}
+.box__icon{
+    font-size: 40px;
+}
+.box__title{
+    padding: 5px;
+}
+
+.box__paragraph{
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px){
+    .box__container{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1724px){
+    .box__container{
+        margin-bottom: 15px;
+    }
+}
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.section__testimonials{
+    width: 400px;
+    display: flex;
+    padding: 15px;
+}
+.testimonials__box{
+    width: 500px;
+    text-align: center;    
+}
+.testimonials__image{
+    width: 250px;
+    height:250px;
+    border-radius:150px;
+
+}
+.testimonials__title{
+    padding: 5px 0;
+}
+.testimonials__title--size{
+    font-weight: lighter;
+    font-size: 13px;
+}
+.testimonials__stars{
+    padding: 5px;
+}
+.testimonials__paragraph{
+    font-size: 12px;
+    padding: 15px;
+}

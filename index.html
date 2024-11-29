@@ -8,150 +8,131 @@
     <meta content="" name="keywords">
     <meta name="author" content="Valeria Torrealba">
     <link href="./assets/img/favicon.png" rel="icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header>
-        <div class="containerNav image">
-            <a href="index.html">
-                <img src="./assets/img/logo.png" alt="Logo Hospital">
-            </a>
-            <nav class="navBar">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="equipo-medico.html">Equipo médico</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn">Reservar Citas</a>
-        </div>
+    <header class="header">
+        <a href="#" class="header__image"><img src="assets/img/logo.png" alt="Logo Hospital"></a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamburger"><span class="hamburger-line"></span></label>
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipo-medico.html">Equipo Medico</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" class="menu__btn">Reservar Citas</a></li>
+            </ul>
+        </nav>        
     </header>
     <main>
         <!--Inicio Bienvenida -->
-        <section>
-            <div class="container"><!--clases del div -->
-                <div class="sectionWelcome">
-                    <h1>Bienvenidos al Hospital Paloma donde nuestra</h1>
-                    <p>Nuestra Misión: Contribuir a la salud y el bienestar de cada paciente al proveer los cuidados necesarios por medio de modelos de atención integradora y la formación de profesionales de la salud que sean lideres en las diferentes áreas de las ciencias de la salud.</p>
-                    <p>Visión: Ser el hospital que brinde la mejor experiencia hospitalaria en el país.</p>
-                </div>
-                <div>
-                    
-                </div>
+        <section class="section">
+            <div class="section__hero">
+                <h1 class="hero__title">Bienvenidos al Hospital Paloma donde nuestra misión es cuidarte</h1>
+                <p class="hero__paragraph">Nuestra Misión: Contribuir a la salud y el bienestar de cada paciente al proveer los cuidados necesarios por medio de modelos de atención integradora y la formación de profesionales de la salud que sean lideres en las diferentes áreas de las ciencias de la salud.</p>
+                <p class="hero__paragraph">Visión: Ser el hospital que brinde la mejor experiencia hospitalaria en el país.</p>
             </div>
         </section>
         <!--Fin Bienvenida -->
         <!--Inicio Servicios -->
-        <section>
-            <div class="sectionWelcome">
-                <h2>Servicios</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium dignissimos fugit cumque unde. Voluptas, excepturi. Esse in nostrum doloribus nobis tenetur accusantium eveniet? Earum quas beatae ullam officiis quidem?</p>
+        <section class="section">
+            <div class="section__services">
+                <h2 class="services__title">Servicios</h2>
+                <p class="services__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium dignissimos fugit cumque unde. Voluptas, excepturi. Esse in nostrum doloribus nobis tenetur accusantium eveniet? Earum quas beatae ullam officiis quidem?</p>
             </div>
-            <div class="container"><!--Container -->
-                <div class="containerBox">
-                    <div class="box">
-                        <div><i class="fa-solid fa-clipboard-question"></i></div><!--icono -->
-                        <h3>Consultas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatum doloribus error, atque porro vero voluptatem quidem officiis! Quas voluptatibus repudiandae qui mollitia numquam modi nihil sunt voluptate cumque tenetur!</p>
-                    </div>
-                <!--Fin servicio -->
-                    <div>
-                        <div class="box">
-                            <div><i class="fa-solid fa-kit-medical"></i></div><!--icono -->
-                            <h3>Urgencias</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatum doloribus error, atque porro vero voluptatem quidem officiis! Quas voluptatibus repudiandae qui mollitia numquam modi nihil sunt voluptate cumque tenetur!</p>
-                        </div>
-                    </div>
-                    <!--Fin servicio -->
-                    <div>
-                        <div class="box">
-                            <div><i class="fa-solid fa-stethoscope"></i></div><!--icono -->
-                            <h3>Especialidades</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatum doloribus error, atque porro vero voluptatem quidem officiis! Quas voluptatibus repudiandae qui mollitia numquam modi nihil sunt voluptate cumque tenetur!</p>
-                        </div>
-                    </div>
-                    <!--Fin servicio -->
+            <!--Container -->
+            <div class="services__box">
+                <div class="box__container">
+                    <div><i class="fa-solid fa-clipboard-question box__icon"></i></div><!--icono -->
+                    <h3 class="box__title">Consultas</h3>
+                    <p class="box__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatum doloribus error, atque porro vero voluptatem quidem officiis! Quas voluptatibus repudiandae qui mollitia numquam modi nihil sunt voluptate cumque tenetur!</p>
                 </div>
+                <!--Fin servicio -->
+                <div class="box__container">
+                        <div><i class="fa-solid fa-kit-medical box__icon"></i></div><!--icono -->
+                        <h3 class="box__title">Urgencias</h3>
+                        <p class="box__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatum doloribus error, atque porro vero voluptatem quidem officiis! Quas voluptatibus repudiandae qui mollitia numquam modi nihil sunt voluptate cumque tenetur!</p>
+                </div>
+                <!--Fin servicio -->
+                <div class="box__container">
+
+                        <div><i class="fa-solid fa-stethoscope box__icon"></i></div><!--icono -->
+                        <h3 class="box__title">Especialidades</h3>
+                        <p class="box__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptatum doloribus error, atque porro vero voluptatem quidem officiis! Quas voluptatibus repudiandae qui mollitia numquam modi nihil sunt voluptate cumque tenetur!</p>
+                </div>
+                <!--Fin servicio -->
             </div>
         </section>
         <!--Fin Servicios -->
         <!--Inicio testimonios -->
-        <section>
-            <div class="container"><!--contenedor -->
-                <div class="testimonials">
-                    <div class="testimonialsBox">
-                        <img src="./assets/img/paciente1.jpg" alt="Madre primeriza abrazando a su bebe recién nacido">
-                        <h3>Nombre Paciente 1</h3>
-                        <h4>dolor sit amet</h4>
-                        <div>
-                            <i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><!--estrelllas -->
-                        </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, sequi. Labore natus repudiandae pariatur assumenda nulla, voluptates aperiam sequi, sunt illo velit veniam atque eum quia aliquid eos voluptatum veritatis?</p>
+        <section class="section">
+            <div class="section__testimonials">
+                <div class="testimonials__box">
+                    <img class="testimonials__image" src="./assets/img/paciente1.jpg" alt="Madre primeriza abrazando a su bebe recién nacido"> 
+                    <h3 class="testimonials__title">Nombre Paciente 1</h3>
+                    <h4 class="testimonials__title--size">dolor sit amet</h4>
+                    <div class="testimonials__stars">
+                        <i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><!--estrelllas -->
                     </div>
-                </div><!--Fin testimonios -->
-                <div class="testimonials">
-                    <div class="testimonialsBox">
-                        <img src="./assets/img/paciente2.jpg" alt="Madre primeriza abrazando a su bebe recién nacido">
-                        <h3>Nombre Paciente 2</h3>
-                        <h4>dolor sit amet</h4>
-                        <div>
-                            <i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><!--estrelllas -->
-                        </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, sequi. Labore natus repudiandae pariatur assumenda nulla, voluptates aperiam sequi, sunt illo velit veniam atque eum quia aliquid eos voluptatum veritatis?</p>
+                    <p class="testimonials__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, sequi. Labore natus repudiandae pariatur assumenda nulla, voluptates aperiam sequi, sunt illo velit veniam atque eum quia aliquid eos voluptatum veritatis?</p>
+                </div>
+            </div><!--Fin testimonios -->
+            <div class="section__testimonials">
+                <div class="testimonials__box">
+                    <img class="testimonials__image" src="./assets/img/paciente2.jpg" alt="Madre primeriza abrazando a su bebe recién nacido">
+                    <h3 class="testimonials__title">Nombre Paciente 2</h3>
+                    <h4 class="testimonials__title--size">dolor sit amet</h4>
+                    <div class="testimonials__stars">
+                        <i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><!--estrelllas -->
                     </div>
-                </div><!--Fin testimonios -->
-                <div class="testimonials">
-                    <div class="testimonialsBox">
-                        <img src="./assets/img/paciente3.jpg" alt="Madre primeriza abrazando a su bebe recién nacido">
-                        <h3>Nombre Paciente 3</h3>
-                        <h4>dolor sit amet</h4>
-                        <div>
-                            <i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><!--estrelllas -->
-                        </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, sequi. Labore natus repudiandae pariatur assumenda nulla, voluptates aperiam sequi, sunt illo velit veniam atque eum quia aliquid eos voluptatum veritatis?</p>
+                    <p class="testimonials__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, sequi. Labore natus repudiandae pariatur assumenda nulla, voluptates aperiam sequi, sunt illo velit veniam atque eum quia aliquid eos voluptatum veritatis?</p>
+                </div>
+            </div><!--Fin testimonios -->
+            <div class="section__testimonials">
+                <div class="testimonials__box">
+                    <img class="testimonials__image" src="./assets/img/paciente3.jpg" alt="Madre primeriza abrazando a su bebe recién nacido">
+                    <h3 class="testimonials__title">Nombre Paciente 3</h3>
+                    <h4 class="testimonials__title--size">dolor sit amet</h4>
+                    <div class="testimonials__stars">
+                        <i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><!--estrelllas -->
                     </div>
-                </div><!--Fin testimonios -->
-            </div>
+                    <p class="testimonials__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, sequi. Labore natus repudiandae pariatur assumenda nulla, voluptates aperiam sequi, sunt illo velit veniam atque eum quia aliquid eos voluptatum veritatis?</p>
+                </div>
+            </div><!--Fin testimonios -->
         </section>
         <!--Fin testimonios -->
     </main>
     <footer>
-        <div class="containerNav">
-            <div>
-                <div class="grid">
-                    <div class="left image space">
-                        <a href="index.html">
-                            <img src="./assets/img/logo.png" alt="Logo Hospital">
-                        </a>
-                        <div class="space">
-                            <p>Dirección:Lorem ipsum dolor s</p>
-                            <p>Telefono: +569 548 25 78</p>
-                            <p>Email: contacto@hospital.cl</p>
-                        </div>
-                        <div class="space">
-                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                            <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="containerNav right">
-                        <h4 class="">Enlaces rápidos</h4>
+        <div class="footer">                
+            <div class="footer__box">
+                <a href="index.html" class="footer__image">
+                    <img src="./assets/img/logo.png" alt="Logo Hospital">
+                </a>                
+                <p>Dirección:Lorem ipsum dolor s</p>
+                <p>Telefono: +569 548 25 78</p>
+                <p>Email: contacto@hospital.cl</p>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook footer__icon"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram footer__icon"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok footer__icon"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-x-twitter footer__icon"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin footer__icon"></i></a>
+            </div>
+            <div class="footer__box">
+                <h4 class="box__title">Enlaces rápidos</h4>
+                <div class="footer__nav">
+                    <nav>
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="equipo-medico.html">Equipo médico</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="center">
-                <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
-            </div>
-        </div>
+        <div class="footer__box--center">
+            <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
+        </div>        
     </footer>
     <script src="https://kit.fontawesome.com/525a8daf37.js" crossorigin="anonymous"></script>
 </body>

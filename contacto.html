@@ -8,125 +8,110 @@
     <meta content="" name="keywords">
     <meta name="author" content="Valeria Torrealba">
     <link href="./assets/img/favicon.png" rel="icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header>
-        <div class="containerNav image">
-            <a href="index.html">
-                <img src="./assets/img/logo.png" alt="Logo Hospital">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="equipo-medico.html">Equipo médico</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn">Reservar Citas</a>
-        </div>
+    <header class="header">
+        <a href="#" class="header__image""><img src="assets/img/logo.png" alt="Logo Hospital"></a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamburger"><span class="hamburger-line"></span></label>
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipo-medico.html">Equipo Medico</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" class="menu__btn">Reservar Citas</a></li>
+            </ul>
+        </nav>        
     </header>
     <main>
         <!-- Contacto -->
-        <section>
+        <section class="section">
             <!-- Section Title -->
-            <div class="sectionWelcome">
-                <h2>Contacto</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ad atque impedit, temporibus modi doloribus voluptas beatae neque iure, magni libero repellendus quidem minima dolorem corrupti suscipit distinctio ipsa eum.</p>
+            <div class="contact">
+                <h2 class="contact__title">Contacto</h2>
+                <p class="contact__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ad atque impedit, temporibus modi doloribus voluptas beatae neque iure, magni libero repellendus quidem minima dolorem corrupti suscipit distinctio ipsa eum.</p>
             </div><!-- End Section Title -->
-            <div>
-                <div class="sectionWelcome">
-                    <iframe style="border:0; width: 80%; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div><!-- End Google Maps -->
-        
-                <div class="containerBox">    
+            <iframe style="border:0; width: 80%; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- End Google Maps --> 
+            <div class="section__contact">
+                <div>
+                    <i class="fa-solid fa-map-location-dot contact__icon"></i>
                     <div>
-                        <div>
-                            <i class="fa-solid fa-map-location-dot"></i>
-                            <div>
-                                <h3>Dirección</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            </div>
-                        </div><!-- End Info Item -->
-            
-                        <div>
-                            <i class="fa-solid fa-square-phone-flip"></i>
-                            <div>
-                                <h3>Telefono</h3>
-                                <p>Lorem ipsum dolor sit am</p>
-                            </div>
-                        </div><!-- End Info Item -->
-            
-                        <div>
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
-                                <h3>Correo</h3>
-                                <p>Lorem ipsum dolor sit am</p>
-                            </div>
-                        </div><!-- End Info Item -->    
-                    </div>    
-                    <div class="sectionWelcome">
-                        <form action="" method="post">
-                            <div>        
-                                <div>
-                                    <input type="text" name="name" placeholder="Nombre" required="">
-                                </div>            
-                                <div>
-                                    <input type="email" name="email" placeholder="Correo" required="">
-                                </div>            
-                                <div>
-                                    <input type="text" name="subject" placeholder="Asunto" required="">
-                                </div>            
-                                <div>
-                                    <textarea name="message" rows="6" placeholder="Mensaje" required=""></textarea>
-                                </div>            
-                                <div>
-                                    <button type="submit">Enviar Mensaje</button>
-                                </div>        
-                            </div>
-                        </form>
-                    </div><!-- Fin contacto -->    
-                </div>
-            </div>
+                        <h3>Dirección</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div><!-- End Info Item -->
+                <div>
+                    <i class="fa-solid fa-square-phone-flip contact__icon"></i>
+                    <div>
+                        <h3>Telefono</h3>
+                        <p>Lorem ipsum dolor sit am</p>
+                    </div>
+                </div><!-- End Info Item -->
+                <div>
+                    <i class="fa-solid fa-envelope contact__icon"></i>
+                    <div>
+                        <h3>Correo</h3>
+                        <p>Lorem ipsum dolor sit am</p>
+                    </div>
+                </div><!-- End Info Item -->    
+            </div>    
+            <div class="section__contactRight">
+                <form action="" method="post">
+                    <div class="contact__center">        
+                        <h2>Escribenos</h2>
+                        <div class="contact__form">
+                            <input type="text" name="name" placeholder="Nombre" required="">
+                        </div>            
+                        <div class="contact__form">
+                            <input type="email" name="email" placeholder="Correo" required="">
+                        </div>            
+                        <div class="contact__form">
+                            <input type="text" name="subject" placeholder="Asunto" required="">
+                        </div>            
+                        <div class="contact__form">
+                            <textarea name="message" rows="6" placeholder="Mensaje" required=""></textarea>
+                        </div>            
+                        <div class="contact__form">
+                            <button type="submit">Enviar Mensaje</button>
+                        </div>        
+                    </div>
+                </form>
+            </div><!-- Fin contacto -->
         </section><!-- /Contacto -->
     </main>
     <footer>
-        <div class="containerNav">
-            <div>
-                <div class="grid">
-                    <div class="left image space">
-                        <a href="index.html">
-                            <img src="./assets/img/logo.png" alt="Logo Hospital">
-                        </a>
-                        <div class="space">
-                            <p>Dirección:Lorem ipsum dolor s</p>
-                            <p>Telefono: +569 548 25 78</p>
-                            <p>Email: contacto@hospital.cl</p>
-                        </div>
-                        <div class="space">
-                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                            <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="containerNav right">
-                        <h4 class="">Enlaces rápidos</h4>
+        <div class="footer">                
+            <div class="footer__box">
+                <a href="index.html" class="footer__image">
+                    <img src="./assets/img/logo.png" alt="Logo Hospital">
+                </a>                
+                <p>Dirección:Lorem ipsum dolor s</p>
+                <p>Telefono: +569 548 25 78</p>
+                <p>Email: contacto@hospital.cl</p>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook footer__icon"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram footer__icon"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok footer__icon"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-x-twitter footer__icon"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin footer__icon"></i></a>
+            </div>
+            <div class="footer__box">
+                <h4 class="box__title">Enlaces rápidos</h4>
+                <div class="footer__nav">
+                    <nav>
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="equipo-medico.html">Equipo médico</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="center">
-                <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
-            </div>
-        </div>
+        <div class="footer__box--center">
+            <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
+        </div>        
     </footer>
     <script src="https://kit.fontawesome.com/525a8daf37.js" crossorigin="anonymous"></script>
 </body>

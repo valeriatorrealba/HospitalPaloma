@@ -8,127 +8,89 @@
     <meta content="" name="keywords">
     <meta name="author" content="Valeria Torrealba">
     <link href="./assets/img/favicon.png" rel="icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header>
-        <div class="containerNav image">
-            <a href="index.html">
-                <img src="./assets/img/logo.png" alt="Logo Hospital">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="equipo-medico.html">Equipo médico</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn">Reservar Citas</a>
-        </div>
+    <header class="header">
+        <a href="#" class="header__image""><img src="assets/img/logo.png" alt="Logo Hospital"></a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamburger"><span class="hamburger-line"></span></label>
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipo-medico.html">Equipo Medico</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" class="menu__btn">Reservar Citas</a></li>
+            </ul>
+        </nav>        
     </header>
     <main>
         <!--Inicio presentacion -->
-        <section>
-            <div class="container">
-                <div> <!--clases del div -->
-                    <div>
-                        <h2>El hospital está comprometido con la excelencia médica a través de la atención de alta calidad, innovación constante y una dedicación profunda al bienestar de cada paciente. Nuestro equipo de profesionales se enfoca en brindar servicios de salud avanzados, aplicando las mejores prácticas y tecnología de vanguardia para asegurar diagnósticos precisos, tratamientos eficaces y una recuperación integral. La satisfacción y el cuidado de nuestros pacientes son la prioridad, y trabajamos día a día para superar sus expectativas con un servicio humano y seguro.</h2>
-                    </div>
-                </div>
+        <section class="section">
+            <div class="section__hero">
+                <h2 class="hero__title--size">El hospital está comprometido con la excelencia médica</h2>
+                <p class="hero__paragraph">A través de la atención de alta calidad, innovación constante y una dedicación profunda al bienestar de cada paciente. Nuestro equipo de profesionales se enfoca en brindar servicios de salud avanzados, aplicando las mejores prácticas y tecnología de vanguardia para asegurar diagnósticos precisos, tratamientos eficaces y una recuperación integral. La satisfacción y el cuidado de nuestros pacientes son la prioridad, y trabajamos día a día para superar sus expectativas con un servicio humano y seguro.</p>
             </div>
         </section>
-        <section>
-            <div class="container"><!--container -->
-                <div class="containerBox">                    
-                    <div class="box"><!--equipo -->
-                        <div class="image">
-                            <img src="./assets/img/doctor1.jpg" alt="Una doctora con una bata blanca y un estetoscopio.">
-                        </div>
-                        <div>
-                            <h4>Nombre</h4>
-                            <span>Especialidad</span>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
-                        </div>
-                    </div><!--fin equipo médico -->
-                    
-                    <div><!--RS -->
-                        <div class="box"><!--equipo -->
-                            <div class="image">
-                                <img src="./assets/img/doctor2.jpg" alt="mujer dentro del laboratorio">
-                            </div>
-                            <div>
-                                <h4>Nombre</h4>
-                                <span>Especialidad</span>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
-                            </div>
-                        </div>
-                    </div><!--fin equipo médico -->
-                    <div><!--RS -->
-                        <div class="box"><!--equipo -->
-                            <div class="image">
-                                <img src="./assets/img/doctor3.jpg" alt="un hombre vestido con una bata sentado en el suelo">
-                            </div>
-                            <div>
-                                <h4>Nombre</h4>
-                                <span>Especialidad</span>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
-                            </div>
-                        </div>
-                    </div><!--fin equipo médico -->
-                    <div><!--RS -->
-                        <div class="box"><!--equipo -->
-                            <div class="image">
-                                <img src="./assets/img/doctor4.jpg" alt="Una mujer con una bata de laboratorio blanca trabajando en una máquina.">
-                            </div>
-                            <div>
-                                <h4>Nombre</h4>
-                                <span>Especialidad</span>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
-                            </div>
-                        </div>
-                    </div><!--fin equipo médico -->
-                </div>
-            </div>
+        <section class="section">
+            <div class="medical__box"><!--equipo -->
+                <img class="testimonials__image" src="./assets/img/doctor1.jpg" alt="Una doctora con una bata blanca y un estetoscopio.">
+                <h3 class="testimonials__title">Nombre</h3>
+                <h4 class="testimonials__title--size">Especialidad</h4>
+                <p class="testimonials__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
+            </div><!--fin equipo médico -->
+            <div class="medical__box"><!--equipo -->
+                <img class="testimonials__image" src="./assets/img/doctor2.jpg" alt="mujer dentro del laboratorio">
+                <h3 class="testimonials__title">Nombre</h3>
+                <h4 class="testimonials__title--size">Especialidad</h4>
+                <p class="testimonials__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
+            </div><!--fin equipo médico -->
+            <div class="medical__box"><!--equipo -->
+                <img class="testimonials__image" src="./assets/img/doctor3.jpg" alt="un hombre vestido con una bata sentado en el suelo">
+                <h3 class="testimonials__title">Nombre</h3>
+                <h4 class="testimonials__title--size">Especialidad</h4>
+                <p class="testimonials__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
+            </div><!--fin equipo médico -->
+            <div class="medical__box"><!--equipo -->
+                <img class="testimonials__image" src="./assets/img/doctor4.jpg" alt="Una mujer con una bata de laboratorio blanca trabajando en una máquina.">
+                <h3 class="testimonials__title">Nombre</h3>
+                <h4 class="testimonials__title--size">Especialidad</h4>
+                <p class="testimonials__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
+            </div><!--fin equipo médico -->
         </section>
         <!--Fin presentacion -->
     </main>
     <footer>
-        <div class="containerNav">
-            <div>
-                <div class="grid">
-                    <div class="left image space">
-                        <a href="index.html">
-                            <img src="./assets/img/logo.png" alt="Logo Hospital">
-                        </a>
-                        <div class="space">
-                            <p>Dirección:Lorem ipsum dolor s</p>
-                            <p>Telefono: +569 548 25 78</p>
-                            <p>Email: contacto@hospital.cl</p>
-                        </div>
-                        <div class="space">
-                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                            <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="containerNav right">
-                        <h4 class="">Enlaces rápidos</h4>
+        <div class="footer">                
+            <div class="footer__box">
+                <a href="index.html" class="footer__image">
+                    <img src="./assets/img/logo.png" alt="Logo Hospital">
+                </a>                
+                <p>Dirección:Lorem ipsum dolor s</p>
+                <p>Telefono: +569 548 25 78</p>
+                <p>Email: contacto@hospital.cl</p>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook footer__icon"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram footer__icon"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok footer__icon"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-x-twitter footer__icon"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin footer__icon"></i></a>
+            </div>
+            <div class="footer__box">
+                <h4 class="box__title">Enlaces rápidos</h4>
+                <div class="footer__nav">
+                    <nav>
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="equipo-medico.html">Equipo médico</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="center">
-                <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
-            </div>
-        </div>
+        <div class="footer__box--center">
+            <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
+        </div>        
     </footer>
     <script src="https://kit.fontawesome.com/525a8daf37.js" crossorigin="anonymous"></script>
 </body>
