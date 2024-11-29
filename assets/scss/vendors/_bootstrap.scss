@@ -1,0 +1,15 @@
+.card{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    padding: 15px;
+}
+.card-img-top{
+    border-radius:150px;
+}
+.card-text{
+    font-size: 12px;
+    padding: 10px 5px;
+}
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';

@@ -26,93 +26,97 @@
     </header>
     <main>
         <!-- Contacto -->
-        <section class="section">
+        <section class="container">
             <!-- Section Title -->
-            <div class="contact">
+            <div class="col-xl-12 col-lg-8 contact">
                 <h2 class="contact__title">Contacto</h2>
                 <p class="contact__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ad atque impedit, temporibus modi doloribus voluptas beatae neque iure, magni libero repellendus quidem minima dolorem corrupti suscipit distinctio ipsa eum.</p>
             </div><!-- End Section Title -->
-            <iframe style="border:0; width: 80%; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="section" style="border:0; width: 80%; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!-- End Google Maps --> 
-            <div class="section__contact">
-                <div>
-                    <i class="fa-solid fa-map-location-dot contact__icon"></i>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-auto col-sm-auto col-xs-3 mt-5 text-start">
                     <div>
-                        <h3>Dirección</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </div><!-- End Info Item -->
-                <div>
-                    <i class="fa-solid fa-square-phone-flip contact__icon"></i>
+                        <i class="fa-solid fa-map-location-dot contact__icon"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div><!-- End Info Item -->
                     <div>
-                        <h3>Telefono</h3>
-                        <p>Lorem ipsum dolor sit am</p>
-                    </div>
-                </div><!-- End Info Item -->
-                <div>
-                    <i class="fa-solid fa-envelope contact__icon"></i>
+                        <i class="fa-solid fa-square-phone-flip contact__icon"></i>
+                        <div>
+                            <h3>Telefono</h3>
+                            <p>Lorem ipsum dolor sit am</p>
+                        </div>
+                    </div><!-- End Info Item -->
                     <div>
-                        <h3>Correo</h3>
-                        <p>Lorem ipsum dolor sit am</p>
-                    </div>
-                </div><!-- End Info Item -->    
-            </div>    
-            <div class="section__contactRight">
-                <form action="" method="post">
-                    <div class="contact__center">        
-                        <h2>Escribenos</h2>
-                        <div class="contact__form">
-                            <input type="text" name="name" placeholder="Nombre" required="">
-                        </div>            
-                        <div class="contact__form">
-                            <input type="email" name="email" placeholder="Correo" required="">
-                        </div>            
-                        <div class="contact__form">
-                            <input type="text" name="subject" placeholder="Asunto" required="">
-                        </div>            
-                        <div class="contact__form">
-                            <textarea name="message" rows="6" placeholder="Mensaje" required=""></textarea>
-                        </div>            
-                        <div class="contact__form">
-                            <button type="submit">Enviar Mensaje</button>
-                        </div>        
-                    </div>
-                </form>
-            </div><!-- Fin contacto -->
+                        <i class="fa-solid fa-envelope contact__icon"></i>
+                        <div>
+                            <h3>Correo</h3>
+                            <p>Lorem ipsum dolor sit am</p>
+                        </div>
+                    </div><!-- End Info Item -->    
+                </div>    
+                <div class="col-xl-6 col-lg-6 col-md-auto col-sm-auto col-xs-3 mt-5 mb-4">    
+                    <h2>Escribenos</h2>
+                    <form action="" method="post">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div><!-- Fin contacto -->
+            </div>
         </section><!-- /Contacto -->
     </main>
     <footer>
-        <div class="footer">                
-            <div class="footer__box">
-                <a href="index.html" class="footer__image">
-                    <img src="./assets/img/logo.png" alt="Logo Hospital">
-                </a>                
-                <p>Dirección:Lorem ipsum dolor s</p>
-                <p>Telefono: +569 548 25 78</p>
-                <p>Email: contacto@hospital.cl</p>
-                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook footer__icon"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram footer__icon"></i></a>
-                <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok footer__icon"></i></a>
-                <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-x-twitter footer__icon"></i></a>
-                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin footer__icon"></i></a>
-            </div>
-            <div class="footer__box">
-                <h4 class="box__title">Enlaces rápidos</h4>
-                <div class="footer__nav">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="equipo-medico.html">Equipo médico</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer">                
+                    <div class="footer__box col">
+                        <a href="index.html" class="footer__image">
+                            <img src="./assets/img/logo.png" alt="Logo Hospital">
+                        </a>                
+                        <p>Dirección:Lorem ipsum dolor s</p>
+                        <p>Telefono: +569 548 25 78</p>
+                        <p>Email: contacto@hospital.cl</p>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook footer__icon"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram footer__icon"></i></a>
+                        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok footer__icon"></i></a>
+                        <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-x-twitter footer__icon"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin footer__icon"></i></a>
+                    </div>
+                    <div class="footer__box col">
+                        <h4 class="box__title">Enlaces rápidos</h4>
+                        <div class="footer__nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="equipo-medico.html">Equipo médico</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
+                <div class="footer__box--center">
+                    <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
+                </div>  
             </div>
         </div>
-        <div class="footer__box--center">
-            <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
-        </div>        
     </footer>
+
     <script src="https://kit.fontawesome.com/525a8daf37.js" crossorigin="anonymous"></script>
 </body>
 </html>
