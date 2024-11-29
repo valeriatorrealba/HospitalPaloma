@@ -10,7 +10,7 @@ git clone https://github.com/valeriatorrealba/HospitalPaloma.git
 
 2. Abre el proyecto en Visual Studio Code.
 3. Inicia Live server (si no lo tienes lo puedes instalar)
-4. Accede al index.html en tu navegador
+4. Accede al index.html desde tu navegador
 
 ``` bash
 http://127.0.0.1:5500/index.html
@@ -103,5 +103,9 @@ Bootstrap se integró al proyecto como base para una estructura rápida y respon
 - Imágenes [Unsplash](https://unsplash.com/)
 - Iconos [Fontawesome](https://fontawesome.com/)
 
+## PDF 
+
+Taller 1 [Taller: Análisis de la Incorporación de JavaScript en el Proyecto del Hospital](https://github.com/valeriatorrealba/HospitalPaloma/blob/main/pdf/Taller1%20ValeriaTorrealba.pdf)
+
 ## Autor
-Desarrollado por Valeria Torrealba y Ana Moraga. (Trabajo práctico en parejas donde se debia escoger un repositorio de las dos)
+Desarrollado por Valeria Torrealba.
