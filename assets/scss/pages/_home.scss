@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../abstracts/mixins' as m;
 /*--------------------------------------------------------------
 # Home Sections
 --------------------------------------------------------------*/
@@ -26,6 +27,9 @@
     margin-top: 20px;
     margin-bottom: 15px;
     font-size: 3rem;
+    @include m.movil-lite-max(){
+        font-size: 2rem;
+    }
 }
 .hero__title--size{
     font-size: 2em;
@@ -34,12 +38,6 @@
     margin-top: 15px;
     font-size: 1rem;
 }
-@media (max-width: 767px){
-    .hero__title{
-        font-size: 2rem;
-    }
-}
-
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -67,6 +65,12 @@
     text-align: center;
     background-color: $quaternary-color;
     border-radius: 8%;
+    @include m.movil-lite-max(){
+        margin-bottom: 15px;
+    }
+    @include m.movil-large(){
+        margin-bottom: 15px
+    }
 }
 .box__icon{
     font-size: 40px;
@@ -78,18 +82,6 @@
 .box__paragraph{
     text-align: center;
     padding-top: 10px;
-}
-
-@media (max-width: 768px){
-    .box__container{
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 1724px){
-    .box__container{
-        margin-bottom: 15px;
-    }
 }
 /*--------------------------------------------------------------
 # Testimonials Section

@@ -1,4 +1,4 @@
-# Hospital
+# Hospital Paloma
 
 **Hospital** es un sitio web diseñado para que los pacientes puedan conocer a los profesionales de la salud, así como obtener información sobre su ubicación en caso de emergencias.
 
@@ -16,14 +16,12 @@ git clone https://github.com/valeriatorrealba/HospitalPaloma.git
 http://127.0.0.1:5500/index.html
 ``` 
 
-
 ## Estructura de carpetas y archivos
 ``` bash
 Hospital/
 │
 ├── assets/
 │   ├── css/
-│   │   └── style.css
 │   │   ├── main.css 
 │   │   └── main.css.map
 │   ├── img/
@@ -31,14 +29,14 @@ Hospital/
 │   │   ├── logo.png
 │   │   └── paciente1.jpg
 │   │
-│   └── js/
+│   ├── js/
 │   │   └── script.js    
 │   │
-│   └── screenshot/
+│   ├── screenshot/
 │   │   └──     
 │   │
 │   └── Sass/
-│       ├── abstrats/   
+│       ├── abstrats/ 
 │       │   ├── _mixins.scss  
 │       │   └── _variables.scss
 │       ├── base/   
@@ -56,11 +54,11 @@ Hospital/
 │       │   └── _default.scss
 │       ├── vendors/ 
 │       │   └── _bootstrap.scss 
-│       └──  main.scss        
+│       └──  main.scss   
 │
 ├── index.html                
 ├── equipo-medico.html            
-├── contacto.html
+├── contacto.html 
 ├── package-lock.json
 ├── package.json
 ├── README.md 
@@ -80,7 +78,7 @@ Hospital/
 - **SASS**
 - **BOOTSTRAP**
 
-# Modularización de Estilos y Media Queries
+## Modularización de Estilos y Media Queries
 
 Para facilitar el mantenimiento del proyecto, los estilos CSS se modularizaron en archivos parciales usando SASS. Esto permite mantener cada sección (como el header, el footer, equipo medico) en archivos separados, haciéndolo más organizado y eficiente. Las media queries se colocaron en cada archivo parcial correspondiente, de modo que los ajustes de diseño específicos de cada componente se aplican únicamente donde se necesitan.
 
@@ -106,4 +104,4 @@ Bootstrap se integró al proyecto como base para una estructura rápida y respon
 - Iconos [Fontawesome](https://fontawesome.com/)
 
 ## Autor
-Desarrollado por Valeria Torrealba.
+Desarrollado por Valeria Torrealba y Ana Moraga. (Trabajo práctico en parejas donde se debia escoger un repositorio de las dos)

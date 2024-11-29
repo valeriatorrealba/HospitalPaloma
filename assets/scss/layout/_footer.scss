@@ -1,4 +1,5 @@
 @use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as m;
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -16,6 +17,12 @@
     p{
         padding: 2px 0;
         margin-bottom:0;
+    }
+    @include m.movil-lite-max(){
+        color: $text-color-white;
+        margin: 5px;
+        width: 250px;
+        display: inline-block;
     }
 }
 .footer__image img{
@@ -49,16 +56,7 @@
             color: $text-color-white;
         }
     }
-}
-
-@media (max-width: 767px){
-    .footer__box{
-        color: $text-color-white;
-        margin: 5px;
-        width: 250px;
-        display: inline-block;
-    }
-    .footer__nav{
+    @include m.movil-lite-max(){
         nav{
             ul{
                 list-style: none;
@@ -75,27 +73,4 @@
     }
 }
 
-@media (max-width: 845px){
-    .footer__box{
-        color: $text-color-white;
-        margin: 5px;
-        width: 250px;
-        display: inline-block;
-    }
-    .footer__nav{
-        nav{
-            ul{
-                list-style: none;
-            }
-            li{
-                display: block;
-                padding: 5px;
-            }
-            a{
-                text-decoration: none;
-                color: $text-color-white;
-            }
-        }
-    }
-}
 
