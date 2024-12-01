@@ -98,6 +98,33 @@ Se aplicó la metodología BEM (Bloque-Elemento-Modificador) para nombrar las cl
 
 Bootstrap se integró al proyecto como base para una estructura rápida y responsive. A través de SASS, se personalizaron algunas variables de Bootstrap para que se ajusten al diseño general, como colores y espaciados. Las modificaciones se realizaron en el archivo _bootstrap.scss, donde se importaron los componentes necesarios de Bootstrap, optimizando el peso final del CSS y ajustando los estilos al diseño deseado.
 
+## Event Loop
+
+El event loop es un mecanismo que se se encarga de gestionar la gestión de tareas asíncronas, mientras mantiene la capacidad de respuesta del programa. El event loop interactúa con el call stack, heap y queue.
+- Call Stack El Event Loop revisa constantemente el Call Stack para ver si hay tareas pendientes. Si está vacío, el Event Loop busca tareas en la cola de tareas y las empuja al Call Stack para que se ejecuten
+
+- Queue (La cola de tareas) almacena las tareas que no se pueden ejecutar de inmediato. Por ejemplo, cuando termina un temporizador, las web APIs empujan la función proporcionada a setTimeout a la cola de tareas.
+
+- Heap (El montículo) es una gran región de memoria donde se colocan los objetos. En el JavaScript engine V8, el montículo se usa para asignar memoria. 
+
+El Event Loop es el corazón del modelo de concurrencia de JavaScript. Permite que JavaScript, un lenguaje de un solo subproceso, maneje operaciones asíncronas de manera eficiente.
+
+## Scope
+
+El scope es el alcance que una variable tiene en el código, este decide a qué variables tienes acceso en cada parte del código. Existen dos tipos de scope, el scope global y el scope local.
+
+- Scope Local cuando puedes acceder a una variable únicamente en cierta parte del código
+- Scope Global cuando está declarada fuera de una función o de un bloque. 
+
+## Diferencias entre let, const y var 
+
+- Variables declaradas con let o const. Cuando se declara una variable let o const dentro de un bloque, el alcance que tiene es sólo dentro de ese bloque. y si existe el mismo nombre entre dos variables let o const manda un mensaje de error. 
+- Variables declaradas con var. cuadno se declara variables con var, su valor sí se va a rescribir, por eso no es recomendable su uso.
+
+## Debugger
+
+Su objetivo es encontrar errores que pueden impedir que el código funcione bien, es posible determinar lo que está ocurriendo dentro del código y poder arreglarlo.
+
 ## Creditos
 - Logo [Pngwing](https://www.pngwing.com/)
 - Imágenes [Unsplash](https://unsplash.com/)

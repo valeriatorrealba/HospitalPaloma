@@ -3,6 +3,27 @@
     "stylelint": "^16.10.0"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
-  }
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.1",
+    "sass": "^1.81.0"
+  },
+  "name": "v5",
+  "version": "1.0.0",
+  "description": "Hospital es un sitio web diseñado para que los pacientes puedan conocer a los profesionales de la salud, así como obtener información sobre su ubicación en caso de emergencias.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch assets/scss/main.scss  assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeriatorrealba/Hospital.git"
+  },
+  "author": "Valeria Torrealba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeriatorrealba/Hospital/issues"
+  },
+  "homepage": "https://github.com/valeriatorrealba/Hospital#readme"
 }
