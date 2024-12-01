@@ -98,6 +98,10 @@ Se aplicó la metodología BEM (Bloque-Elemento-Modificador) para nombrar las cl
 
 Bootstrap se integró al proyecto como base para una estructura rápida y responsive. A través de SASS, se personalizaron algunas variables de Bootstrap para que se ajusten al diseño general, como colores y espaciados. Las modificaciones se realizaron en el archivo _bootstrap.scss, donde se importaron los componentes necesarios de Bootstrap, optimizando el peso final del CSS y ajustando los estilos al diseño deseado.
 
+## Integración de Prompts y Validación de Datos
+
+En el proyecto se utilizaron prompts para interactuar con el usuario y obtener datos necesarios.
+
 ## Event Loop
 
 El event loop es un mecanismo que se se encarga de gestionar la gestión de tareas asíncronas, mientras mantiene la capacidad de respuesta del programa. El event loop interactúa con el call stack, heap y queue.
@@ -109,21 +113,35 @@ El event loop es un mecanismo que se se encarga de gestionar la gestión de tare
 
 El Event Loop es el corazón del modelo de concurrencia de JavaScript. Permite que JavaScript, un lenguaje de un solo subproceso, maneje operaciones asíncronas de manera eficiente.
 
-## Scope
+## Scope y Operadores
+
+### Scope
 
 El scope es el alcance que una variable tiene en el código, este decide a qué variables tienes acceso en cada parte del código. Existen dos tipos de scope, el scope global y el scope local.
 
 - Scope Local cuando puedes acceder a una variable únicamente en cierta parte del código
 - Scope Global cuando está declarada fuera de una función o de un bloque. 
 
+Se prefirió el uso de `let` y `const` para mantener un control más estricto del scope y evitar errores comunes como el re-declarado de variables.
+
+### Operadores
+
+- **Operadores aritméticos** (`+`, `-`, `*`, `/`) para cálculos básicos.
+- **Operadores de comparación** (`===`, `!==`, `<`, `>`) para validaciones.
+- **Operadores lógicos** (`&&`, `||`) para condiciones compuestas.
+
 ## Diferencias entre let, const y var 
 
 - Variables declaradas con let o const. Cuando se declara una variable let o const dentro de un bloque, el alcance que tiene es sólo dentro de ese bloque. y si existe el mismo nombre entre dos variables let o const manda un mensaje de error. 
 - Variables declaradas con var. cuadno se declara variables con var, su valor sí se va a rescribir, por eso no es recomendable su uso.
 
-## Debugger
+## Debugger y Manejo de Errores con Try/Catch
 
 Su objetivo es encontrar errores que pueden impedir que el código funcione bien, es posible determinar lo que está ocurriendo dentro del código y poder arreglarlo.
+
+Para manejar errores, se usa bloques try/catch que:
+- Capturan excepciones durante la ejecución del programa.
+- Permiten mostrar mensajes personalizados al usuario sin interrumpir la experiencia de uso.
 
 ## Creditos
 - Logo [Pngwing](https://www.pngwing.com/)
