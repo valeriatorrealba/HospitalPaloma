@@ -152,6 +152,22 @@ la lista de doctores disponibles.
 - Pilas para gestionar las citas de pacientes, con métodos para agregar citas, obtener la última cita agendada y visualizar la próxima cita a atender.
 - Colas para simular el orden de llegada de los pacientes en la página de contacto, con métodos para agregar pacientes, atender al primero en la fila y visualizar al próximo paciente.
 
+## Programación funcional aplicada en JavaScript
+La programación funcional es un paradigma de programación que trata a las funciones como "ciudadanos de primera clase", lo que significa que pueden ser asignadas a variables, pasadas como argumentos y retornadas por otras funciones. En JavaScript, la programación funcional se apoya en conceptos como funciones puras, inmutabilidad y composición de funciones.
+
+## Descripción de los eventos y uso de asincronía
+Los eventos asíncronos son un paradigma en el que los participantes eligen el camino a seguir, y la organización puede personalizar los contenidos dirigidos a ciertos tipos de audiencia.
+
+## La herencia, encapsulación y polimorfismo son conceptos fundamentales de la Programación Orientada a Objetos (POO): 
+### Herencia
+Permite crear nuevas clases a partir de otras existentes, reutilizando y extendiendo el código. La clase que hereda los miembros de otra se llama clase derivada, y la clase que es heredada se llama clase base. 
+
+### Encapsulación
+Permite definir niveles de visibilidad para los elementos de una clase, ocultando los valores o estado de un objeto de datos. Esto ayuda a construir sistemas de software más flexibles, seguros y mantenibles. 
+
+### Polimorfismo
+Permite que los objetos se comporten de distintas maneras según el contexto, aportando flexibilidad y simplicidad al código. La palabra polimorfismo viene del griego y significa "con muchas formas".
+
 ## Creditos
 
 - Logo [Pngwing](https://www.pngwing.com/)
