@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="header__image""><img src="assets/img/logo.png" alt="Logo Hospital"></a>
+        <a href="#" class="header__image"><img src="assets/img/logo.png" alt="Logo Hospital"></a>
         <input type="checkbox" id="side-menu" class="side-menu">
         <label for="side-menu" class="hamburger"><span class="hamburger-line"></span></label>
         <nav class="header__nav">
@@ -36,53 +36,86 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100 testimonials">
-                        <img src="./assets/img/doctor1.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/img/doctor1.jpg" class="card-img-top" alt="Fotografía de la Dra. Callie Torres">
                         <div class="card-body">
                             <h3 class="card-title testimonials__title">Dra. Callie Torres</h3>
                             <h4 class="testimonials__title--size">Especialidad Ortopedia</h4>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
+                            <p class="card-text">La Dra. Callie Torres cuenta con una amplia experiencia en el área de ortopedia. Su enfoque está en mejorar la movilidad y la calidad de vida de sus pacientes a través de tratamientos personalizados y tecnología avanzada.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 testimonials">
-                        <img src="./assets/img/doctor2.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/img/doctor2.jpg" class="card-img-top" alt="Fotografía de la Dra. Arizona Robbins">
                         <div class="card-body">
                         <h3 class="card-title testimonials__title">Dra. Arizona Robbins</h3>
                         <h4 class="testimonials__title--size">Especialidad Genetista</h4>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
+                        <p class="card-text">La Dra. Arizona Robbins es una genetista reconocida, especializada en brindar soluciones innovadoras para condiciones genéticas complejas. Su trabajo se basa en un compromiso con la investigación y la atención personalizada.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 testimonials">
-                        <img src="./assets/img/doctor3.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/img/doctor3.jpg" class="card-img-top" alt="Fotografía del Dr. Federico Garcia">
                         <div class="card-body">
                         <h3 class="card-title testimonials__title">Dr. Federico Garcia</h3>
                         <h4 class="testimonials__title--size">Especialidad Dentista</h4>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
+                        <p class="card-text">El Dr. Federico Garcia, como dentista, se dedica a garantizar una salud bucal óptima para todos sus pacientes. Utiliza técnicas modernas para ofrecer tratamientos cómodos y efectivos, priorizando el bienestar del paciente.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 testimonials">
-                        <img src="./assets/img/doctor4.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/img/doctor4.jpg" class="card-img-top" alt="Fotografía de la Dra. Lexie Grahams">
                         <div class="card-body">
                         <h3 class="card-title">Dra. Lexie Grahams</h3>
                         <h4 class="testimonials__title--size">Especialidad Oftalmologia</h4>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae error dolore architecto, eum porro sed, ipsa quo incidunt, expedita praesentium provident! Provident alias nisi ipsum qui ducimus officia tenetur temporibus!</p>
+                        <p class="card-text">La Dra. Lexie Grahams es especialista en oftalmología y se enfoca en la detección temprana y tratamiento de enfermedades visuales. Su misión es mejorar la visión y la calidad de vida de sus pacientes con un enfoque empático y profesional.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="filter">
-                <h3 class="filter-title">Listado de Doctores</h3>
-                <button type="submit" class="filter-btn btn btn-primary">Saber quienes son</button>
-                <ul id="medical-equipment" class="filter-list"></ul> 
-            </div>
         </section>
         <!--Fin presentacion -->
+        <section class="section container">
+            <div class="container">
+                <!-- <div class="services__box row" >
+                    <div class="filter">
+                        <h3 class="filter-title">Listado de Doctores</h3>
+                        <button type="submit" class="filter-btn btn btn-primary">Saber quienes son</button>
+                        <ul id="medical-equipment" class="filter-list"></ul> 
+                    </div>
+                </div> -->
+                <div class="services__box row" id="doctores">
+                    <div class="col-lg-12 col-md-12 col-sm-auto col-xs-3">
+                        <h2 class="box__title text-center">Lista de Doctores</h2>
+                    <div class="box__paragraph">
+                        <input type="text" id="search-input" placeholder="Buscar por especialidad">
+                        <button id="search-button">Buscar</button>
+                    </div>
+                    <ul id="doctor-list"></ul>
+                    </div>
+                </div>
+                <!-- Sección de Citas -->
+                <div class="services__box row p-5" id="citas">
+                    <div class="col-lg-12 col-md-10 col-sm-auto col-xs-3">
+                        <h2 class="box__title text-center">Gestión de Citas</h2>
+                        <form id="citas-form">
+                            <label for="paciente">Nombre del Paciente:</label>
+                            <input type="text" id="paciente" required>
+                            <label for="doctor">Selecciona un Doctor:</label>
+                            <select id="doctor"></select>
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha" required>
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" required>
+                            <button type="submit">Registrar Cita</button>
+                        </form>
+                        <ul id="citas-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>        
     </main>
     <footer>
         <div class="container-fluid">
@@ -92,9 +125,9 @@
                         <a href="index.html" class="footer__image">
                             <img src="./assets/img/logo.png" alt="Logo Hospital">
                         </a>                
-                        <p>Dirección:Lorem ipsum dolor s</p>
-                        <p>Telefono: +569 548 25 78</p>
-                        <p>Email: contacto@hospital.cl</p>
+                        <p>Dirección: Av. Hospital, 1234, Santiago, Chile</p>
+                        <p>Teléfono: +56 2 234 5678</p>
+                        <p>Email: contacto@hospitalpaloma.cl</p>
                         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook footer__icon"></i></a>
                         <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram footer__icon"></i></a>
                         <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok footer__icon"></i></a>
@@ -115,14 +148,12 @@
                     </div>
                 </div>
                 <div class="footer__box--center">
-                    <p>© <span>Copyright</span> <strong>Hospital</strong> <span>Todos los Derechos Reservados 2024</span></p>
+                    <p>© <span>Copyright</span> <strong>Hospital Paloma</strong> <span>Todos los Derechos Reservados 2024</span></p>
                 </div>  
             </div>
         </div>
     </footer>
-
     <script src="https://kit.fontawesome.com/525a8daf37.js" crossorigin="anonymous"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/medical-equipment.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+//Laboratorio virtual 2
 // 1. Programación Funcional en JavaScript
 
 // Currying para calcular el costo total de los serviciosImplementa una función que use currying para calcular el costo total de los servicios de

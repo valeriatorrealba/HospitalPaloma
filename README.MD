@@ -30,7 +30,7 @@ Hospital/
 │   │   └── paciente1.jpg
 │   │
 │   ├── js/
-│   │   └── script.js    
+│   │   └── main.js    
 │   │
 │   ├── screenshot/
 │   │   └──     
@@ -132,7 +132,7 @@ Para manejar errores, se usa bloques try/catch que:
 - Capturan excepciones durante la ejecución del programa.
 - Permiten mostrar mensajes personalizados al usuario sin interrumpir la experiencia de uso.
 
-# Análisis de Algoritmos y Complejidad
+## Análisis de Algoritmos y Complejidad
 
 1. **Complejidad Big-O predominante:**
    - Operaciones: O(n) (búsqueda, filtrado, clonado).
